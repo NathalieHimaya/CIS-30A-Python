@@ -38,13 +38,70 @@
 
 # print ("Your height from inches to meters: ", heightin/inchtometer)
 
-# Exercise 5: Cloud Storage Cost using Variables and Operators
+# # Exercise 6: Cloud Storage Cost using Variables and Operators
 
-datastored = int(input("Enter amount of data stored in cloud:"))
-additionaldata = (datastored - 750)
-extra_data_cost = round(additionaldata * 5)
-monthly_cost = round(extra_data_cost + 100)
+# datastored = int(input("Enter amount of data stored in cloud:"))
+# additionaldata = (datastored - 750)
+# extra_data_cost = round(additionaldata * 5)
+# monthly_cost = round(extra_data_cost + 100)
 
-print("You have used an additional ", additionaldata, "GB")
-print("5", extra_data_cost, "will be added to your monthly cost")
-print("Your current monthly cost now $", monthly_cost)
+# print("You have used an additional ", additionaldata, "GB")
+# print("5", extra_data_cost, "will be added to your monthly cost")
+# print("Your current monthly cost now $", monthly_cost)
+
+# # Exercise 7: Square Footage Variables and Operators
+
+# livinglength = int(input("Enter length of living room: "))
+# livingwidth = int(input("Enter width of living room:"))
+# masterlength = int(input("Enter length of master room: "))
+# masterwidth = int(input("Enter width of master room:"))
+# kitchenlength = int(input("Enter kitchen length of room: "))
+# kitchenwidth = int(input("Enter kitchen width of room:"))
+
+
+# area1 = livinglength * livingwidth
+# area2 = masterlength * masterwidth
+# area3 = kitchenlength * kitchenwidth
+
+# totalarea = area1 + area2 + area3
+
+# totalsqft = 4.57 * totalarea
+
+# print("Your cost of flooring is: $", round(totalsqft))
+
+# # Excerise 8: Using String Format, Variables to Determine Shipping
+
+# tablet = 1
+# laptop = 7
+# tv = 37
+# shippingrate = 2.66
+
+# totalweight = tablet + laptop + tv
+# shippingcost = shippingrate * totalweight
+
+# print("Jack will spend ${} on shipping".format(shippingcost))
+
+# # Exercist 9: Using abs()
+
+# num = -288
+# print(abs(num))
+
+# Exercise 10: Using ceil() and floor in python math module
+
+# import math
+
+# jweight = 187.13
+
+# print("This is Juan's weight using floor: ", math.floor(jweight))
+# print("This is Juan's weight using ceil: ", math.ceil(jweight))
+
+# # Exercise 11: Using min() and max() in Python
+
+# quizscores = [90, 78, 82, 61, 87, 94]
+
+# print("The highest score is ", max(quizscores))
+# print("The lowest score is ", min(quizscores))
+
+# Exercise 12: Using sum() to find total
+miles = [2,3,5,8]
+print(sum(miles, 10))
