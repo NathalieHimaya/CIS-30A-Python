@@ -271,3 +271,8 @@
 #     print(num)
 
 
+cust_age = 75
+if cust_age >= 65:
+    print("You received senior discount!")
+else:
+    print("You cannot receive senior discount!")
