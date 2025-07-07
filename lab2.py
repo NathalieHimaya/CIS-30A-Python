@@ -14,31 +14,37 @@
 # state_name = "Indianpolis"
 # print(state_name.count("i"))
 
-# # Ex. 3
+# # # Ex. 3
 # thestring = 'I am a college student'
 # print(thestring.replace("college","CIS"))
 
-# # Ex. 4
+# # # Ex. 4
 # name = "Nathalie"
 # print(name.lower())
 # print(name.upper())
 
-# # Ex. 5
+# # # Ex. 5
 # names = ["Nathalie" , "Nat" , "Nathe" , "Nathen", "Nate"]
 # space = "#"
 # print(space.join(names))
 
-# # Ex. 6
+# Ex. 6
 
 # name = "Nathalie"
 # print(name.startswith("N"))
 
 # # Ex. 7
 
-user_name = "nhimaya1"
-user_age = 21
-user_address = "1132 Drive"
+# user_name = "nhimaya1"
+# user_age = 21
+# user_address = "1132 Drive"
 
-print(user_name.isalpha())
-# print(user_age.isdigit())
-print(user_address.isalnum())
+# print(user_name.isalpha())
+# print(str(user_age).isdigit())
+# print(user_address.isalnum())
+
+# Ex. 8
+slicer = "America, land of the free."
+ss = slice(1, 1, 1)
+
+
