@@ -88,8 +88,44 @@
 # print(carolina)
 # print(raquel)
 
-#Ex. 5 
-st_A = {'c', 'o', 'm', 'p', 'u', 't', 'e', 'r'}
-st_B = {'m', 'u', 't', 'e'}
+# # Ex. 5
+# # a. Declare the given sets
+# st_A = {'c', 'o', 'm', 'p', 'u', 't', 'e', 'r'}
+# st_B = {'m', 'u', 't', 'e'}
 
+# if st_B.issubset(st_A):
+#     print("Set B is a subset of Set A")
 
+# if st_A.issuperset(st_B):
+#     print("Set A is a superset of Set B")
+
+# # Ex. 6
+
+# #function
+
+# def mileseachday(miles):
+#     km = [m * 1.6 for m in miles]
+#     print("Your total miles is", sum(km))
+
+# miles = [50, 70, 100]
+# mileseachday(miles)
+
+# # Ex. 7
+
+# def oddoreven(number):
+#     if number % 2 == 0:
+#         print("This number is even")
+#     else:
+#         print("The number is odd")
+
+# number = int(input("Enter a number: "))
+
+# oddoreven(number)
+
+# Ex. 8
+
+import textinfo
+
+text = input("Enter a string: ")
+
+textinfo.lengthofstring(text)
