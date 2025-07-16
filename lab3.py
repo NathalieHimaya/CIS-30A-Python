@@ -122,10 +122,14 @@
 
 # oddoreven(number)
 
-# Ex. 8
+# # Ex. 8
 
-import textinfo
+# import textinfo
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-textinfo.lengthofstring(text)
+# textinfo.lengthofstring(text)
+
+# Ex. 9
+f = open("myfile.txt", 'r')
+f.close
