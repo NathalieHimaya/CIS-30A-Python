@@ -130,6 +130,8 @@
 
 # textinfo.lengthofstring(text)
 
-# Ex. 9
-f = open("myfile.txt", 'r')
-f.close
+# # Ex. 9
+# f = open("myfile.txt", 'r')
+# f.close
+
+# Ex. 11
