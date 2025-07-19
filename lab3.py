@@ -134,4 +134,125 @@
 # f = open("myfile.txt", 'r')
 # f.close
 
-# Ex. 11
+# # Ex. 10
+# with open("myfile.txt", "r") as myfile:
+#     content = myfile.read()
+#     print("File Content:")
+#     print(content)
+
+#     myfile.seek(0) 
+#     lines = myfile.readlines()
+#     print("Total number of lines:", len(lines))
+
+#     word_count = sum(len(line.split()) for line in lines)
+#     print("Total number of words:", word_count)
+
+# # Ex. 11
+# import customer_module
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# phone = input("Enter your phone number: ")
+# marital_status = input("Enter your marital status: ")
+
+# if (customer_module.is_valid_input(name) and
+#     customer_module.is_valid_input(age) and
+#     customer_module.is_valid_input(phone) and
+#     customer_module.is_valid_input(marital_status)):
+
+#     customer_data = {
+#         "Name": name,
+#         "Age": age,
+#         "Phone Number": phone,
+#         "Marital Status": marital_status
+#     }
+
+#     customer_module.save_customer_info(customer_data)
+#     customer_module.read_customer_info()
+
+# else:
+#     print("Invalid input detected. Only digits or alphabetic characters are allowed.")
+
+# # Ex. 12
+
+# subtotal = float(input("Enter the subtotal amount: $"))
+
+# sales_tax = subtotal * 0.0775
+# print(f"Sales tax amount: ${sales_tax:.2f}")
+
+# shipping_cost = subtotal * 0.05
+# print(f"Shipping cost: ${shipping_cost:.2f}")
+
+# grand_total = subtotal + sales_tax + shipping_cost
+# print(f"Grand total: ${grand_total:.2f}")
+
+# product_choice = input("Enter product choice: ")
+# discount = input("Enter discount (if any): ")
+
+# with open("receipt.txt", "w") as receipt_file:
+#     receipt_file.write(f"Product Choice: {product_choice}\n")
+#     receipt_file.write(f"Discount: {discount}\n")
+#     receipt_file.write(f"Subtotal: ${subtotal:.2f}\n")
+#     receipt_file.write(f"Sales Tax: ${sales_tax:.2f}\n")
+#     receipt_file.write(f"Shipping Cost: ${shipping_cost:.2f}\n")
+#     receipt_file.write(f"Grand Total: ${grand_total:.2f}\n")
+
+# print("Thank you for shopping with us!")
+
+# # Ex. 13
+# import receipt_module
+
+# products = {
+#     "1": ("Laptop", 299.99),
+#     "2": ("Gaming desktop PC", 1029.99),
+#     "3": ("TV", 249.99),
+#     "4": ("X-box One", 219.99),
+#     "5": ("Nintendo Switch", 279.99)
+# }
+
+# subtotal = 0.0
+# order_list = []
+
+# while True:
+#     print("\nBestElectronics Menu:")
+#     for key, value in products.items():
+#         print(f"{key}. {value[0]}: ${value[1]:.2f}")
+
+#     choice = input("Enter product number (1–5): ")
+#     if choice in products:
+#         item, price = products[choice]
+#         order_list.append(item)
+#         subtotal += price
+#         print(f"{item} added to cart.")
+#     else:
+#         print("Invalid choice.")
+
+#     another = input("Do you want to add another product? (yes/no): ").lower()
+#     if another != "yes":
+#         break
+
+# tax = subtotal * 0.0775
+# grand_total = subtotal + tax
+
+# receipt_module.save_receipt(order_list, subtotal, tax, grand_total)
+# receipt_module.display_receipt()
+
+# print("Thank you for shopping with BestElectronics!")
+
+# Ex. 14
+prod = {'tomato': 'red', 'squash': 'yellow', 'potato': 'brown', 'avocado': 'green'}
+
+def display_product_colors():
+    for item, color in prod.items():
+        print(f"'{item}': '{color}'")
+
+def show_scope_details():
+    print("\n--- GLOBAL VARIABLES ---")
+    for key in globals():
+        print(key)
+    
+    print("\n--- LOCAL VARIABLES ---")
+    for key in locals():
+        print(key)
+
+display_product_colors()
+show_scope_details()

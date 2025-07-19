@@ -1,0 +1,6 @@
+Customer Order:
+- Gaming desktop PC
+
+Subtotal: $1029.99
+Sales Tax (7.75%): $79.82
+Grand Total: $1109.81
