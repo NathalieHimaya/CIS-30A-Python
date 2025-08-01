@@ -1,0 +1,52 @@
+BEGIN SunriseCafeProgram
+
+  DISPLAY "Welcome to Sunrise Cafe!"
+  
+  CALL get_customer()
+    PROMPT for name, phone, address
+    VALIDATE input (name not empty, phone = 10 digits, address not empty)
+    RETURN Customer object
+
+  CREATE Order object using Customer
+
+  CALL create_menu()
+    CREATE list of Drink objects
+    CREATE list of Food objects
+    COMBINE both into one menu list
+    RETURN menu
+
+  CALL take_order(menu, order)
+    LOOP
+      DISPLAY menu items with prices
+      PROMPT user to choose item number (0 to finish)
+      
+      IF choice is 0
+        BREAK loop
+
+      VALIDATE item choice is in menu
+      PROMPT for quantity
+      VALIDATE quantity is a positive number
+      ADD item and quantity to order
+    END LOOP
+
+  IF no items were added to the order
+    DISPLAY "No items ordered!"
+    EXIT program
+
+  CALL schedule_delivery(order)
+    PROMPT for delivery date in MM-DD format
+    VALIDATE date is valid and not too far in future
+    PROMPT for delivery time choice (from list)
+    SET delivery date and time in order
+
+  DISPLAY order summary
+
+  PROMPT user to save to file (y/n)
+  IF user agrees
+    TRY
+      SAVE order summary to text file
+      DISPLAY filename
+    CATCH error
+      DISPLAY save error message
+
+END PROGRAM
