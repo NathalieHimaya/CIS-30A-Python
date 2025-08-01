@@ -1,4 +1,4 @@
-# Sunrise Cafe Ordering System ☕🍪
+# final.py: Sunrise Cafe Ordering System ☕🍪
 
 A simple command-line-based food and drink ordering system for a fictional Sunrise Cafe. This Python program simulates real-life cafe operations, such as menu browsing, customer input, order creation, delivery scheduling, and saving receipts to a text file.
 
@@ -14,7 +14,4 @@ A simple command-line-based food and drink ordering system for a fictional Sunri
 - 💾 Save Order Summary to a `.txt` File
 - 🔒 Basic Error Handling (Invalid input, date validation, file I/O)
 
----
-
-## 📦 Project Structure
 
